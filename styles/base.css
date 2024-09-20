@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-section {
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content p {
+    flex: 2;
+    margin-right: 15px;
+}
+
+.profile-pic {
+    flex: 1;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.country-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.country-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country-content img.flag-image {
+    flex: 1;
+    width: 100px;
+}
+
+.country-content p {
+    flex: 2;
+    margin-left: 15px;
+}
+
+.country-title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.flag-inscription {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.resources-section {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resources-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.resources-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources-section ul li {
+    margin-bottom: 10px;
+}
+
+.resources-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.resources-section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
