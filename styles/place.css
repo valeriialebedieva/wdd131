@@ -21,7 +21,7 @@ header {
 main {
     position: relative;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling in wider view */
+    overflow: hidden;
 }
 
 
@@ -54,8 +54,28 @@ main {
     z-index: 1;
 }
 
-/* Mobile layout */
+.weather .weather-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.weather::after {
+    display: none;
+}
+
+
+
 @media (max-width: 600px) {
+   .weather::after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('images/weather-icon.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 5px;
+    }
     header {
         order: 1;
     }
