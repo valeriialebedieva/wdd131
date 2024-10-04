@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Valeriia Lebedieva">
+    <meta name="author" content="Valeriia Lebedieva">
+    <title>Place Title</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Madagascar</h1>
+</header>
+
+<main class="grid-container">
+    <section class="data">
+        <h2>Data</h2>
+        <p>Area: 587,041 sq km</p>
+        <p>Population: 27,691,018</p>
+        <p>Capital: Antananarivo</p>
+        <p>Languages: Malagasy, French</p>
+        <p>Currency: Malagasy Ariary</p>
+        <p>Time Zone: UTC+3</p>
+        <p>Calling Code: +261</p>
+        <p>Internet TLD: .mg</p>
+    </section>
+
+    <section class="hero">
+        <img srcset="images/image-small.jpeg 480w, images/image-large.jpg 800w"
+             sizes="(max-width: 600px) 480px, 800px"
+             src="images/image-large.jpg"
+             alt="Place Image">
+    </section>
+
+    <section class="weather">
+        <h2>Weather
+            <span class="icon">
+                <svg id="weather-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mobile-icon">
+                    <circle cx="12" cy="12" r="5" fill="yellow" />
+                    <path d="M2 12h4m14 0h4M6.34 6.34l2.83 2.83m12.73 0l-2.83 2.83M6.34 17.66l2.83-2.83m12.73 0l-2.83-2.83" stroke="orange" stroke-width="2"/>
+                </svg>
+                <span class="wider-icon">⛅</span>
+            </span>
+        </h2>
+        <p>Temperature: 10 °C</p>
+        <p>Conditions: Partly Cloudy</p>
+        <p>Wind: 5 km/h</p>
+        <p id="windchill">Wind Chill: Calculating...</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Valeriia Lebedieva, Ukraine</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
+
+</body>
+</html>
