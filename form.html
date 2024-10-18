@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Valeriia Lebedieva">
+    <meta name="author" content="Valeriia Lebedieva">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+<div class="form-container">
+    <h1>Product Review</h1>
+
+    <form method="get" action="review.html">
+        <label for="product-name">Product Name</label>
+        <select id="product-name" name="product-name" required>
+            <option disabled selected>Select a Product ...</option>
+        </select>
+
+        <label>Overall Rating</label>
+        <div class="stars-rating">
+            <div class="star-item">
+                <label for="rating-1" class="star-label">&star;</label>
+                <input type="radio" id="rating-1" name="rating" value="1">
+            </div>
+            <div class="star-item">
+                <label for="rating-2" class="star-label">&starf;&starf;</label>
+                <input type="radio" id="rating-2" name="rating" value="2">
+            </div>
+            <div class="star-item">
+                <label for="rating-3" class="star-label">&starf;&starf;&starf;</label>
+                <input type="radio" id="rating-3" name="rating" value="3">
+            </div>
+            <div class="star-item">
+                <label for="rating-4" class="star-label">&starf;&starf;&starf;&starf;</label>
+                <input type="radio" id="rating-4" name="rating" value="4">
+            </div>
+            <div class="star-item">
+                <label for="rating-5" class="star-label">&starf;&starf;&starf;&starf;&starf;</label>
+                <input type="radio" id="rating-5" name="rating" value="5">
+            </div>
+        </div>
+
+        <label for="installation-date">Date of Installation</label>
+        <input type="date" id="installation-date" name="installation-date" required>
+
+        <label>Which features did you find useful in the product? <br><span>(Check all that apply)</span></label>
+
+        <div class="feature">
+            <input type="checkbox" id="durability" name="feature" value="durability">
+            <label for="durability">Durability</label>
+        </div>
+        <div class="feature">
+            <input type="checkbox" id="ease-of-use" name="feature" value="ease-of-use">
+            <label for="ease-of-use">Ease of Use</label>
+        </div>
+        <div class="feature">
+            <input type="checkbox" id="performance" name="feature" value="performance">
+            <label for="performance">Performance</label>
+        </div>
+        <div class="feature">
+            <input type="checkbox" id="design" name="feature" value="design">
+            <label for="design">Design</label>
+        </div>
+
+        <label for="written-review">Written Review <span>(Optional)</span></label>
+        <textarea id="written-review" name="written-review"></textarea>
+
+        <label for="name">Your Name <span>(Optional)</span></label>
+        <input type="text" id="name" name="name">
+
+        <input type="submit" value="Post Review">
+    </form>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Valeriia Lebedieva, Ukraine</p>
+        <p id="lastModified"></p>
+    </footer>
+</div>
+
+<script src="scripts/form.js"></script>
+</body>
+</html>
