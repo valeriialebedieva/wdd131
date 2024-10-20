@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #FF9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero {
+    background-color: #FFEB3B;
+    text-align: center;
+    padding: 50px;
+}
+
+#featuredPets {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.pets-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pets-container div {
+    background-color: #eee;
+    padding: 15px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pets-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adopt img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .pets-container div {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
